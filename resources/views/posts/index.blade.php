@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_','_', app()->getLocale()) }}">
+<html lang="{{ str_replace('_','-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <title>Blog</title>
@@ -8,6 +8,7 @@
     </head>
     <body class="antialiased">
         <h1>Blog Name</h1>
+        <a href="/posts/create">create</a>
         <div class='posts'>
             @foreach ($posts as $post)
                 <div class='post'>
